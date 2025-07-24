@@ -6,7 +6,7 @@
 /*   By: peazeved <peazeved@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 16:26:45 by peazeved          #+#    #+#             */
-/*   Updated: 2025/07/21 17:03:01 by peazeved         ###   ########.fr       */
+/*   Updated: 2025/07/24 15:14:38 by peazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ t_list *creat(void *data) // criar nodes
 void ft_list_push_front(t_list **begin_list, void *data)
 {
     t_list *node; // node (alocar espaco para um novo node)
-
     node = creat(data); // crio o node com  a data.
     
     node->next = *begin_list; // o meu proximo node sera o primeiro node.
