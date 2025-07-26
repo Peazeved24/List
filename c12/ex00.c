@@ -6,7 +6,7 @@
 /*   By: peazeved <peazeved@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 15:25:53 by peazeved          #+#    #+#             */
-/*   Updated: 2025/07/22 15:38:38 by peazeved         ###   ########.fr       */
+/*   Updated: 2025/07/19 16:32:48 by peazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,8 @@ int main() // stack
         printf("%d,", *(int*)t->data);
         t = t -> next;
     }
+    free(a);
+    free(b);
+    free(c);
     return 0;
 }
